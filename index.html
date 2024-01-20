@@ -3,6 +3,8 @@
 <head>
 </head>
 <body bgcolor='gray'>
+<h1><b>BDAY Present<br>
+to xyel
 <script>
 var img;
 setTimeout(function(){
@@ -26,7 +28,7 @@ vid.src='data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAACTsb
 
 vid.width=(window.innerWidth)*.5*.75;
 vid.height=(window.innerHeight)*.25*.75;
-vid.style='position:absolute;z-index:0';
+vid.style='position:absolute;';
 
 vid.style.left=((window.innerWidth*(.5-(.5*.75/2)))-0)+'px';
 
@@ -52,7 +54,10 @@ img.style.top=((window.innerHeight*(.5-(.25/2)))-0)+'px';
 img.addEventListener('touchstart',function(){
 if(new Date().getDate()==20){
 x=-.0002;
+//vid.play();
+setTimeout(function(){
 vid.play();
+},1000*2);
 }
 else{
 alert('Dimo pa bortdey, sa 21 pa. ðŸ˜¡');
