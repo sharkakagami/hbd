@@ -3,8 +3,10 @@
 <head>
 </head>
 <body bgcolor='gray'>
+<div id=0>
 <h1><b>BDAY Present<br>
 to xyel
+</div>
 <script>
 var img;
 setTimeout(function(){
@@ -52,15 +54,16 @@ img.style.top=((window.innerHeight*(.5-(.25/2)))-0)+'px';
 
 
 img.addEventListener('touchstart',function(){
-if(new Date().getDate()==20){
+if(new Date().getDate()==21){
 x=-.0002;
 //vid.play();
 setTimeout(function(){
 vid.play();
+document.getElementById(0).innerHTML='<h1><b><marquee>HAPIBORTDEY XYEL!!!</marquee>';
 },1000*2);
 }
 else{
-alert('Dimo pa bortdey, sa 21 pa. ðŸ˜¡');
+alert('it ken bi open in 21.');
 }
 });
 
